@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luís Gustavo Barbosa Gonçalves – Portfólio</title>
+<meta name="description" content="Portfólio de Luís Gustavo, estudante de Sistemas de Informação na UFOP em busca de estágio em tecnologia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1526;--panel:#141f36;--line:#27375a;--tx:#dbe5f7;--mute:#8fa2c6;--k:#6cb4ff;--v:#f2b86b;--ok:#7ee0b5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f6fb;--panel:#fff;--line:#cfd8ea;--tx:#17233d;--mute:#51618a;--k:#1f5fc4;--v:#9a5b00;--ok:#0b7a52;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f4f6fb;--panel:#fff;--line:#cfd8ea;--tx:#17233d;--mute:#51618a;--k:#1f5fc4;--v:#9a5b00;--ok:#0b7a52;color-scheme:light}
+:root[data-theme="dark"]{--bg:#0d1526;--panel:#141f36;--line:#27375a;--tx:#dbe5f7;--mute:#8fa2c6;--k:#6cb4ff;--v:#f2b86b;--ok:#7ee0b5;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.65 "Source Serif 4",Georgia,serif}
+a{color:var(--k);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--v);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:12px;height:52px;font:600 14px "JetBrains Mono",monospace}
+header nav{display:flex;gap:16px;margin-left:auto;overflow-x:auto}
+header nav a{color:var(--mute);text-decoration:none;white-space:nowrap}
+header nav a:hover{color:var(--tx)}
+.hb{background:none;border:1px solid var(--line);color:var(--tx);border-radius:6px;padding:4px 9px;font:inherit;cursor:pointer;flex:none}
+.term{margin:32px 0 8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.bar{display:flex;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line);font:400 13px "JetBrains Mono",monospace;color:var(--mute)}
+.bar i{width:11px;height:11px;border-radius:50%;background:var(--line);display:block;margin-top:3px}
+.bar span{margin-left:8px}
+.fetch{display:grid;grid-template-columns:auto 1fr;gap:28px;padding:22px;font:400 14px/1.7 "JetBrains Mono",monospace;align-items:center}
+pre{margin:0;font:400 7.4px/7.4px "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;color:var(--k);white-space:pre;overflow:hidden}
+.rows{min-width:0}
+.rows div{opacity:0;animation:in .01s forwards;overflow-wrap:anywhere}
+.rows b{color:var(--v);font-weight:600}
+.rows .h{color:var(--k);font-weight:800;font-size:17px}
+.rows .s{color:var(--mute)}
+@keyframes in{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.rows div{animation-delay:0s!important}}
+@media (max-width:760px){.fetch{grid-template-columns:1fr;gap:16px;padding:16px;justify-items:start}pre{font-size:min(1.7vw,7.4px);line-height:min(1.7vw,7.4px)}header nav{display:none}}
+h1{font:800 clamp(28px,5vw,44px)/1.15 "JetBrains Mono",monospace;margin:40px 0 12px;letter-spacing:-.02em}
+.lead{max-width:62ch;color:var(--tx);font-size:19px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 8px}
+.btn{font:600 14px "JetBrains Mono",monospace;padding:10px 16px;border-radius:6px;border:1px solid var(--k);color:var(--bg);background:var(--k);text-decoration:none;cursor:pointer}
+.btn.o{background:none;color:var(--k)}
+section{padding:48px 0 0}
+h2{font:600 18px "JetBrains Mono",monospace;margin:0 0 20px;color:var(--ok)}
+h2::before{content:"$ ";color:var(--mute)}
+.proj{display:grid;grid-template-columns:minmax(0,230px) 1fr;gap:6px 24px;padding:18px 0;border-top:1px solid var(--line)}
+.proj h3{margin:0;font:600 15px "JetBrains Mono",monospace;color:var(--v);overflow-wrap:anywhere}
+.proj p{margin:0 0 8px;max-width:60ch}
+.tg{font:400 13px "JetBrains Mono",monospace;color:var(--mute)}
+@media (max-width:700px){.proj{grid-template-columns:1fr}}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.cert{border:1px solid var(--line);border-left:4px solid var(--k);padding:18px 20px;background:var(--panel);border-radius:4px}
+.cert h3{margin:0 0 4px;font:600 17px/1.35 "Source Serif 4",Georgia,serif}
+.cert p{margin:0 0 10px;color:var(--mute);font-size:15px}
+.cert dl{margin:0;font:400 13px/1.8 "JetBrains Mono",monospace}
+.cert dt{display:inline;color:var(--mute)}
+.cert dd{display:inline;margin:0 0 0 6px;overflow-wrap:anywhere}
+.cert dd::after{content:"";display:block}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}
+.tl div{margin-bottom:24px;position:relative}
+.tl div::before{content:"";position:absolute;left:-29px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--k);border:3px solid var(--bg)}
+.tl h3{margin:0;font:600 17px "Source Serif 4",Georgia,serif}
+.tl .d{font:400 13px "JetBrains Mono",monospace;color:var(--mute)}
+.tl p{margin:6px 0 0;max-width:62ch}
+.sk{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;font:400 15px "JetBrains Mono",monospace}
+.sk dt{color:var(--v)}.sk dd{margin:0}
+footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);font:400 13px "JetBrains Mono",monospace}
+
+/* animações */
+#pg{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--k);transform-origin:left;transform:scaleX(0);pointer-events:none}
+header nav a.on{color:var(--tx);text-decoration:underline;text-decoration-color:var(--k);text-underline-offset:6px}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.done{--d:0ms}
+.js h2.rv{opacity:1;transform:none;clip-path:inset(0 100% 0 0)}
+.js h2.rv.in{animation:typ .9s steps(22) var(--d,0ms) forwards}
+@keyframes typ{to{clip-path:inset(0 0 0 0)}}
+.js .term pre{clip-path:inset(0 0 100% 0);animation:scan 1.8s steps(40) .25s forwards}
+@keyframes scan{to{clip-path:inset(0 0 0 0)}}
+.js .proj.rv.in:hover{transform:translateX(8px)}
+.js .cert.rv.in:hover{transform:translateY(-5px)}
+.proj,.cert{transition:border-color .25s}
+.tl div::before{animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 transparent}50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--k) 30%,transparent)}}
+@media (prefers-reduced-motion:reduce){.js .rv,.js h2.rv,.js h2.rv.in,.js .term pre{opacity:1;transform:none;clip-path:none;transition:none;animation:none}#pg{display:none}.tl div::before{animation:none}html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<meta name="theme-color" content="#0d1526">
+<meta name="author" content="Luís Gustavo Barbosa Gonçalves">
+<link rel="canonical" href="https://lu15gustavo.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lu15gustavo.github.io/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Luís Gustavo | Portfólio de Desenvolvedor">
+<meta property="og:description" content="Estudante de Sistemas de Informação na UFOP em busca de estágio em tecnologia. Projetos em React, Node.js, TypeScript e Power Platform.">
+<meta property="og:image" content="https://lu15gustavo.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Luís Gustavo | Portfólio de Desenvolvedor">
+<meta name="twitter:description" content="Estudante de Sistemas de Informação na UFOP em busca de estágio em tecnologia.">
+<meta name="twitter:image" content="https://lu15gustavo.github.io/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1526'/%3E%3Ctext x='16' y='22' font-size='16' font-family='monospace' font-weight='700' text-anchor='middle' fill='%236cb4ff'%3ELG%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header><div id="pg"></div><div class="wrap"><span>~/luis</span>
+<nav><a href="#sobre" data-en="about">sobre</a><a href="#projetos" data-en="projects">projetos</a><a href="#certificados" data-en="certificates">certificados</a><a href="#trajetoria" data-en="journey">trajetória</a><a href="#contato" data-en="contact">contato</a></nav>
+<button id="lg" class="hb" type="button" aria-label="Switch language to English">EN</button>
+<button id="tg" class="hb" type="button" aria-label="Alternar tema claro e escuro" data-en="theme">tema</button></div></header>
+
+<main class="wrap">
+<div class="term">
+<div class="bar"><i></i><i></i><i></i><span>luis@gustavo: ~</span></div>
+<div class="fetch">
+<pre aria-hidden="true">                    █                                                  
+                    █                                                  
+                                ██                                     
+                    █      █████████████████                           
+                         ████████████████████                          
+                       █████████████████████████                       
+                     ███████████          ███████                      
+                   ████████                ████████                    
+                  ███████     ██████████      ██████                   
+                 ████████  ██████████████████  ██████                  
+                  █████  ██████       █████████  ███                   
+                  ███   ████   ██   ███     ████ ███                   
+                  ███  ████                   ██ ███                   
+                  ███ ███ ███████     ███████ █████ ██  ██████████████ 
+                   █████ ███████████████████   ████                    
+                   █████        ███  █         ███                     
+                    ███ █        █████    ██    ███                    
+        █    █      ███ ██     ████████████████  ██                    
+                    ██   █████████████████████   █     ███████████   █ 
+                    ██          ███████  ██   ██ █                     
+                    ██  ████   ██████████      ███                     
+                    █████   █████ █    █████ █████                     
+                    ██████ █████ ██████ ██████████                     
+                    ███ █████   ██    ███  ████ ██                     
+                     ██          ████████      ███                     
+               ██████████     ████████████   █████████████████████     
+        ██████████████████                   ████ ████████████████████ 
+  ██████████████  █  ██████                 ████ ███            ███████
+ ████████   ███  ███ ██ ████              █████ ███   █            ████
+ █████     ██ █     ███  █████          ███████████               ██ ██
+ █████     █ █  ██  ███   ████████████████  ███████        █     █  ██ 
+ ██████    █ █      ███     ███████████   ████████ ██    █        ██   
+   ██ █            ████       ██████    ████ ████        █             
+    █ ████          █████       ██████████  ███        █               
+     █  ███        ███████         █████  ████      █   ██   ███       
+     ██            ███  ███             █  ██      █    █████ █████    
+ ██   █           ██     ███             ██ ███         █████ ████     
+   ██████     ██  ████    ██            ██ █████         ██            
+     █████           ██   ███           █ ██   █          █            
+      ████   █       ██    ███       ███ ██    ██          █         ██</pre>
+<div class="rows" id="rows">
+<div class="h">luis@gustavo</div>
+<div class="s">─────────────────────────────</div>
+<div data-en="<b>Role:</b> Technology intern (looking)"><b>Cargo:</b> Estágio em Tecnologia (buscando)</div>
+<div data-en="<b>Host:</b> UFOP, Information Systems"><b>Host:</b> UFOP, Sistemas de Informação</div>
+<div data-en="<b>Uptime:</b> studying since Sep 2023"><b>Uptime:</b> na graduação desde set. 2023</div>
+<div data-en="<b>Focus:</b> Full Stack, Back-End, Bots and Automation"><b>Foco:</b> Full Stack, Back-End, Bots e Automações</div>
+<div><b>Languages.Programming:</b> JavaScript, TypeScript, Java, Python, SQL, C</div>
+<div><b>Stack.Web:</b> React, Node.js, Express, HTML, CSS</div>
+<div><b>Database:</b> MySQL, PostgreSQL</div>
+<div data-en="<b>Low-code:</b> Power Platform (200h)"><b>Low-code:</b> Power Platform (200h)</div>
+<div><b>Tools:</b> Git, GitHub, VS Code</div>
+<div data-en="<b>Languages.Real:</b> Portuguese, English (intermediate)"><b>Languages.Real:</b> Português, Inglês (intermediário)</div>
+<div><b>Location:</b> João Monlevade, MG</div>
+<div class="s">─ Contact ──────────────────────</div>
+<div><b>Email:</b> perfilluis.gustavo@gmail.com</div>
+<div><b>GitHub:</b> Lu15Gustavo</div>
+<div><b>LinkedIn:</b> luisgustavo166</div>
+<div><b>Instagram:</b> luisgustavo_166</div>
+</div></div></div>
+
+<h1 data-en="Hi, I'm Luís Gustavo.">Olá, eu sou o Luís Gustavo.</h1>
+<p class="lead" data-en="Information Systems student at UFOP, looking for a technology internship where I can turn what I learn into practical solutions.">Estudante de Sistemas de Informação na UFOP, procurando um estágio em tecnologia para transformar o que aprendo em soluções práticas.</p>
+<div class="cta">
+<a class="btn" href="#contato" data-en="Talk to me">Falar comigo</a>
+<a class="btn o" href="https://github.com/Lu15Gustavo" target="_blank" rel="noopener" data-en="View GitHub">Ver GitHub</a>
+<a class="btn o" href="https://www.linkedin.com/in/luisgustavo166/" target="_blank" rel="noopener" data-en="View LinkedIn">Ver LinkedIn</a>
+</div>
+
+<section id="sobre">
+<h2 data-en="cat about.md">cat sobre.md</h2>
+<p class="lead" style="font-size:17px" data-en="I'm analytical, organized and proactive. Before programming, I worked in retail financial management, where I learned to handle deadlines, double-check information and make quick decisions. Today I bring that discipline to web development, automation and Power Platform projects.">Tenho perfil analítico, organizado e proativo. Antes de programar, trabalhei com gestão financeira no varejo, onde aprendi a lidar com prazos, conferência de informações e decisões rápidas. Hoje levo essa disciplina para projetos de desenvolvimento web, automação e Power Platform.</p>
+<p style="max-width:62ch" data-en="I learn new technologies fast and enjoy working in a team. My projects range from React applications to customer-service chats and WhatsApp bots.">Aprendo tecnologias novas rápido e gosto de trabalhar em equipe. Meus projetos vão de aplicações em React a chats de atendimento e bots de WhatsApp.</p>
+<dl class="sk" style="margin-top:22px">
+<dt data-en="Development">Desenvolvimento</dt><dd>Power Platform, React, JavaScript, TypeScript, Node.js, Express, Java, Python, HTML, CSS, SQL, C</dd>
+<dt data-en="Soft skills">Comportamental</dt><dd data-en="clear communication, proactivity, fast learning, responsibility, teamwork">comunicação clara, proatividade, aprendizado rápido, responsabilidade, trabalho em equipe</dd>
+<dt data-en="Languages">Idiomas</dt><dd data-en="Portuguese (native), English (intermediate)">Português (nativo), Inglês (intermediário)</dd>
+</dl>
+</section>
+
+<section id="projetos">
+<h2 data-en="ls projects/">ls projetos/</h2>
+<div class="proj"><h3><a href="https://github.com/Lu15Gustavo/Prob_Poker" target="_blank" rel="noopener">Prob_Poker/</a></h3><div><p data-en="Page that calculates the odds of a poker round and shows the probabilities in different scenarios.">Página que calcula as odds de uma rodada de pôquer e mostra as probabilidades em diferentes cenários.</p><span class="tg">JavaScript, React</span></div></div>
+<div class="proj"><h3><a href="https://github.com/Lu15Gustavo/FlashcardsNEW" target="_blank" rel="noopener">FlashcardsNEW/</a></h3><div><p data-en="Flashcard app for studying.">App de flashcards para estudos.</p><span class="tg">TypeScript</span></div></div>
+<div class="proj"><h3><a href="https://github.com/Lu15Gustavo/Chat_de_Suporte" target="_blank" rel="noopener">Chat_de_Suporte/</a></h3><div><p data-en="Customer support chat focused on fast communication.">Chat de suporte ao cliente, com foco em agilidade na comunicação.</p><span class="tg">TypeScript, JavaScript, HTML</span></div></div>
+<div class="proj"><h3><a href="https://github.com/Lu15Gustavo/Bot_WPP_Noticias" target="_blank" rel="noopener">Bot_WPP_Noticias/</a></h3><div><p data-en="WhatsApp bot that automates sending news.">Bot de WhatsApp que automatiza o envio de notícias.</p><span class="tg">JavaScript, Node.js</span></div></div>
+<p class="tg" style="margin-top:8px"><span data-en="Code and other repositories at">Código e outros repositórios em</span> <a href="https://github.com/Lu15Gustavo" target="_blank" rel="noopener">github.com/Lu15Gustavo</a></p>
+</section>
+
+<section id="certificados">
+<h2 data-en="ls certificates/">ls certificados/</h2>
+<div class="certs">
+<article class="cert"><h3 data-en="Santander: Cybersecurity from Zero to Practice">Santander: Cibersegurança do Zero à Prática</h3><p data-en="Bootcamp by Digital Innovation One (DIO) with Santander.">Bootcamp da Digital Innovation One (DIO) com o Santander.</p>
+<dl><dt data-en="Workload:">Carga horária:</dt><dd data-en="37 hours">37 horas</dd><dt data-en="Completed on:">Concluído em:</dt><dd data-en="Nov 2, 2026">02/11/2026</dd><dt data-en="Code:">Código:</dt><dd>CTJMKGZV</dd></dl></article>
+<article class="cert"><h3>Power Platform, Agents &amp; Extending</h3><p data-en="Microsoft Power Platform course by Smart Academy (Smart Consulting).">Curso da Smart Academy (Smart Consulting) sobre Microsoft Power Platform.</p>
+<dl><dt data-en="Workload:">Carga horária:</dt><dd data-en="200 hours">200 horas</dd><dt data-en="Issued on:">Emitido em:</dt><dd data-en="Feb 9, 2026">09/02/2026</dd><dt>ID:</dt><dd>6989d76504e44f0a94042b1b</dd></dl></article>
+</div>
+</section>
+
+<section id="trajetoria">
+<h2 data-en="git log --education --experience">git log --formação --experiência</h2>
+<div class="tl">
+<div><span class="d" data-en="Sep 2023 to present">set. 2023 até hoje</span><h3 data-en="Bachelor's in Information Systems">Bacharelado em Sistemas de Informação</h3><p data-en="Federal University of Ouro Preto (UFOP).">Universidade Federal de Ouro Preto (UFOP).</p></div>
+<div><span class="d" data-en="previous experience">experiência anterior</span><h3 data-en="Financial Manager, Supermercado Sorriso Leme">Gerente Financeiro, Supermercado Sorriso Leme</h3><p data-en="Cash flow monitoring, payments and receipts organization, and support for administrative control. Built leadership, communication and decision-making skills in a dynamic environment.">Acompanhamento de caixa, organização de pagamentos e recebimentos e apoio ao controle administrativo. Desenvolvi liderança, comunicação e tomada de decisão em um ambiente dinâmico.</p></div>
+</div>
+</section>
+
+<section id="contato">
+<h2 data-en="./contact.sh">./contato.sh</h2>
+<p class="lead" style="font-size:18px" data-en="If your team has an internship opening, I'd love to talk.">Se a sua equipe tem uma vaga de estágio, vou adorar conversar.</p>
+<div class="cta">
+<a class="btn" href="mailto:perfilluis.gustavo@gmail.com" data-en="Send email">Enviar e-mail</a>
+<button class="btn o" id="cp" type="button" data-en="Copy email">Copiar e-mail</button>
+<a class="btn o" href="https://wa.me/5533998284169" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn o" href="https://www.instagram.com/luisgustavo_166/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Luís Gustavo Barbosa Gonçalves, João Monlevade, MG</div></footer>
+
+<script>
+(function(){
+var r=document.documentElement,tb=document.getElementById('tg'),lb=document.getElementById('lg'),cp=document.getElementById('cp');
+var els=document.querySelectorAll('[data-en]');
+els.forEach(function(e){e.setAttribute('data-pt',e.innerHTML)});
+var lang='pt';
+var meta={pt:['Luís Gustavo Barbosa Gonçalves – Portfólio','Portfólio de Luís Gustavo, estudante de Sistemas de Informação na UFOP em busca de estágio em tecnologia.'],
+en:['Luís Gustavo Barbosa Gonçalves – Portfolio','Portfolio of Luís Gustavo, Information Systems student at UFOP looking for a technology internship.']};
+function setLang(l){
+lang=l;
+els.forEach(function(e){e.innerHTML=e.getAttribute(l==='en'?'data-en':'data-pt')});
+r.lang=l==='en'?'en':'pt-BR';
+document.title=meta[l][0];
+document.querySelector('meta[name=description]').setAttribute('content',meta[l][1]);
+lb.textContent=l==='en'?'PT':'EN';
+lb.setAttribute('aria-label',l==='en'?'Mudar idioma para português':'Switch language to English');
+tb.setAttribute('aria-label',l==='en'?'Toggle light and dark theme':'Alternar tema claro e escuro');
+try{localStorage.setItem('lang',l)}catch(e){}
+}
+var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+if(!saved){saved=(navigator.language||'pt').toLowerCase().indexOf('pt')===0?'pt':'en'}
+if(saved==='en')setLang('en');
+lb.onclick=function(){setLang(lang==='pt'?'en':'pt')};
+try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
+tb.onclick=function(){
+var cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+var n=cur==='dark'?'light':'dark';r.setAttribute('data-theme',n);
+try{localStorage.setItem('theme',n)}catch(e){}};
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('#rows div').forEach(function(d,i){d.style.animationDelay=rm?'0s':(0.12*i+0.2)+'s'});
+cp.onclick=function(){
+var m='perfilluis.gustavo@gmail.com';
+function ok(){cp.textContent=lang==='en'?'Email copied':'E-mail copiado'}
+try{navigator.clipboard.writeText(m).then(ok,function(){location.href='mailto:'+m})}catch(e){location.href='mailto:'+m}};
+// animações ao rolar
+var targets=document.querySelectorAll('main h1,main .lead,main .cta,#sobre p,#sobre dl,.proj,.cert,.tl > div,#projetos > p,section h2');
+var cnt=new Map();
+targets.forEach(function(el){
+el.classList.add('rv');
+var k=el.parentNode,i=cnt.get(k)||0;cnt.set(k,i+1);
+el.style.setProperty('--d',Math.min(i*90,360)+'ms');
+});
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+if(e.isIntersecting){var el=e.target;el.classList.add('in');io.unobserve(el);setTimeout(function(){el.classList.add('done')},1400)}
+})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+targets.forEach(function(el){io.observe(el)});
+}else{targets.forEach(function(el){el.classList.add('in')})}
+// barra de progresso
+var pg=document.getElementById('pg'),tk=false;
+function upd(){var h=document.documentElement.scrollHeight-innerHeight;pg.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')';tk=false}
+addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// seção ativa no menu
+var links=document.querySelectorAll('header nav a');
+if('IntersectionObserver' in window){
+var so=new IntersectionObserver(function(es){es.forEach(function(e){
+if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}
+})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(function(sec){so.observe(sec)});
+}
+})();
+</script>
+</body>
+</html>
