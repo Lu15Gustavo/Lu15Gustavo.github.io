@@ -65,8 +65,10 @@ h2::before{content:"$ ";color:var(--mute)}
 .tl h3{margin:0;font:600 17px "Source Serif 4",Georgia,serif}
 .tl .d{font:400 13px "JetBrains Mono",monospace;color:var(--mute)}
 .tl p{margin:6px 0 0;max-width:62ch}
-.sk{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;font:400 15px "JetBrains Mono",monospace}
-.sk dt{color:var(--v)}.sk dd{margin:0}
+.sk{display:grid;grid-template-columns:auto 1fr;gap:0 32px;font:400 15px/1.6 "JetBrains Mono",monospace;border-bottom:1px solid var(--line)}
+.sk dt,.sk dd{padding:16px 0;border-top:1px solid var(--line)}
+.sk dt{color:var(--v);font-weight:600}.sk dd{margin:0}
+@media (max-width:560px){.sk{grid-template-columns:1fr}.sk dt{padding-bottom:4px}.sk dd{border-top:0;padding-top:0}}
 footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);font:400 13px "JetBrains Mono",monospace}
 
 /* animações */
